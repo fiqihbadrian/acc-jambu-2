@@ -39,6 +39,8 @@ Fitur yang tersedia dalam website ini meliputi:
 - Informasi Kontak dan Lokasi  
   Menyediakan informasi alamat dan kontak toko.
 
+- Jenis jenis
+
 Website ini sedang dikembangkan lebih lanjut dengan penambahan fitur baru.
 
 ---
