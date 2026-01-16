@@ -172,4 +172,6 @@ npm run prisma:seed       # Seed database dengan data awal
 - Middleware menggunakan deprecated convention (akan migrate ke "proxy")
 - Untuk production, ganti SQLite ke PostgreSQL/MySQL
 
-## Developer
+## Preview
+
+[home](https://raw.githubusercontent.com/fiqihbadrian/acc-jambu-2/refs/heads/main/public/hom.png)
