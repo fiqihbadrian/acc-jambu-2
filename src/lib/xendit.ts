@@ -11,3 +11,4 @@ export async function createInvoice({ orderId, amountCents }:{ orderId: number, 
 export async function simulateStatusUpdate(invoiceId: string, status: InvoiceStatus) {
   return { invoiceId, status }
 }
+// ahhh atas bawah cantik
