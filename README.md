@@ -174,4 +174,8 @@ npm run prisma:seed       # Seed database dengan data awal
 
 ## Preview
 
-[home](https://raw.githubusercontent.com/fiqihbadrian/acc-jambu-2/refs/heads/main/public/hom.png)
+![home](https://raw.githubusercontent.com/fiqihbadrian/acc-jambu-2/refs/heads/main/public/hom.png)
+![login](https://raw.githubusercontent.com/fiqihbadrian/acc-jambu-2/refs/heads/main/public/log.png)
+![das](https://raw.githubusercontent.com/fiqihbadrian/acc-jambu-2/refs/heads/main/public/dashbor.png)
+![edit](https://raw.githubusercontent.com/fiqihbadrian/acc-jambu-2/refs/heads/main/public/edit.png)
+![admin](https://raw.githubusercontent.com/fiqihbadrian/acc-jambu-2/refs/heads/main/public/admin.png)
