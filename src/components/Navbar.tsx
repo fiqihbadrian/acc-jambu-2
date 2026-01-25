@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { HiMenu, HiX } from "react-icons/hi";
+import { gsap } from "gsap";
 
 type User = {
   id: number;
@@ -27,6 +28,20 @@ export default function Navbar({ user, onLogout, onLoginClick }: NavbarProps) {
   const [showLogoutModal, setShowLogoutModal] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const cartDropdownRef = useRef<HTMLDivElement>(null);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+
+  // Animate mobile menu with GSAP
+  useEffect(() => {
+    if (!mobileMenuRef.current) return;
+
+    if (open) {
+      gsap.fromTo(
+        mobileMenuRef.current,
+        { opacity: 0, y: -20 },
+        { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }
+      );
+    }
+  }, [open]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -273,7 +288,7 @@ export default function Navbar({ user, onLogout, onLoginClick }: NavbarProps) {
 
       {/* MOBILE MENU */}
       {open && (
-        <div className="md:hidden fixed top-24 w-full bg-white/90 dark:bg-[#1a3d2a]/90 backdrop-blur z-40 p-4">
+        <div ref={mobileMenuRef} className="md:hidden fixed top-24 w-full bg-white/90 dark:bg-[#1a3d2a]/90 backdrop-blur z-40 p-4">
           {["Produk", "Keunggulan", "Hubungi"].map((item) => (
             <Link
               key={item}
