@@ -14,11 +14,11 @@ Website e-commerce untuk toko printer **Aneka Citra Computer** di Jambu 2, Kota 
 ## Fitur
 
 ### Customer Features
-- Katalog produk printer dengan detail lengkap
-- Shopping cart dengan CRUD operations (Create, Read, Update, Delete)
+- Katalog produk printer with detail lengkap
+- Shopping cart with CRUD operations (Create, Read, Update, Delete)
 - Autentikasi (Login & Register)
 - Checkout dengan form pengiriman
-- Simulasi pembayaran menggunakan Xendit (mode sandbox)
+- Simulasi pembayaran with Xendit (mode sandbox)
 - Product detail modal (Tokopedia-style) dengan quantity selector dan tabs
 
 ### Admin Features
@@ -32,20 +32,20 @@ Website e-commerce untuk toko printer **Aneka Citra Computer** di Jambu 2, Kota 
 - **Framework:** Next.js 16.1.1 (App Router)
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS v4
-- **Database:** SQLite dengan Prisma ORM v5.14.0
+- **Database:** SQLite with Prisma ORM v5.14.0
 - **Authentication:** JWT (jose) + bcryptjs
 - **Validation:** Zod
 - **Payment:** Xendit (sandbox mode)
 
 ## Installation
 
-1. Clone repository ini
+1. Clone this repository
 2. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Setup environment variables di `.env`:
+3. Setup environment variables `.env`:
 ```env
 DATABASE_URL="file:./prisma/dev.db"
 JWT_SECRET="your-secret-key-here"
@@ -57,12 +57,12 @@ npm run prisma:generate
 npm run prisma:migrate
 ```
 
-5. Seed database dengan data awal:
+5. Seed database with data awal:
 ```bash
 npm run prisma:seed
 ```
 
-6. Jalankan development server:
+6. run development server:
 ```bash
 npm run dev
 ```
@@ -71,44 +71,15 @@ Buka [http://localhost:3000](http://localhost:3000) di browser.
 
 ## Admin Access
 
-Setelah seed, gunakan kredensial berikut untuk login sebagai admin:
-
 - **Email:** admin@anekacitra.com
 - **Password:** admin123
 
-## Project Structure
-
-```
-src/
-├── app/
-│   ├── api/                    # API Routes
-│   │   ├── auth/              # Login & Register endpoints
-│   │   ├── products/          # Get products
-│   │   ├── orders/            # Create order & payment status
-│   │   └── admin/             # Admin CRUD endpoints
-│   ├── dashboard/             # Admin dashboard pages
-│   │   ├── page.tsx          # Dashboard overview
-│   │   └── products/         # Product management
-│   ├── checkout/             # Checkout page
-│   └── page.tsx              # Homepage
-├── lib/
-│   ├── auth.ts               # JWT & bcrypt utilities
-│   ├── db.ts                 # Prisma client
-│   └── xendit.ts             # Mock Xendit integration
-└── middleware.ts             # Admin route protection
-
-prisma/
-├── schema.prisma             # Database schema
-├── seed.ts                   # Database seeding script
-└── migrations/               # Database migrations
-```
-
 ## Database Schema
 
-- **User:** Customer accounts dengan role (USER/ADMIN)
-- **Admin:** Admin relation (1-to-1 dengan User)
+- **User:** Customer accounts with role (USER/ADMIN)
+- **Admin:** Admin relation (1-to-1 with User)
 - **Product:** Product catalog dengan brand, price, stock, description
-- **Order:** Customer orders dengan payment status
+- **Order:** Customer orders with payment status
 - **OrderItem:** Order line items (relasi many-to-many)
 
 ## Available Scripts
@@ -129,12 +100,12 @@ npm run prisma:seed       # Seed database dengan data awal
 ## Features Detail
 
 ### Customer Flow
-1. Browse products di homepage
+1. Browse products homepage
 2. Click "Lihat Detail" untuk melihat detail produk lengkap
-3. Login/Register jika belum login
+3. Login/Register
 4. Tambah produk ke keranjang dengan quantity yang diinginkan
 5. Kelola keranjang (update quantity, hapus item)
-6. Checkout dengan mengisi form pengiriman
+6. Checkout with fill form pengiriman
 7. Pilih metode pembayaran
 8. Simulasi pembayaran (Xendit sandbox)
 
@@ -167,10 +138,9 @@ npm run prisma:seed       # Seed database dengan data awal
 
 ## Notes
 
-- Database menggunakan SQLite untuk development (mudah setup)
 - Xendit masih dalam mode sandbox/simulasi
 - Middleware menggunakan deprecated convention (akan migrate ke "proxy")
-- Untuk production, ganti SQLite ke PostgreSQL/MySQL
+- For production, ganti SQLite ke PostgreSQL/MySQL
 
 ## Preview
 
