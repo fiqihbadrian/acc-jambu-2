@@ -4,10 +4,10 @@ Website e-commerce untuk toko printer **Aneka Citra Computer** di Jambu 2, Kota 
 
 ---
 
-**👨‍💻 Developer:** Fiqih Badrian ([@fiqihbadrian](https://github.com/fiqihbadrian))  
-**📧 Email:** fiqihbadrian@gmail.com  
-**🗓️ Development Period:** January 2026  
-**💻 Project Type:** Full-Stack E-Commerce Web Application
+**Developer:** Fiqih Badrian ([@fiqihbadrian](https://github.com/fiqihbadrian))  
+**Email:** fiqihbadrian@gmail.com  
+**Development Period:** January 2026  
+**Project Type:** Full-Stack E-Commerce Web Application
 
 ---
 
