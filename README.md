@@ -126,16 +126,6 @@ npm run prisma:seed       # Seed database dengan data awal
 - Admin routes protected dengan middleware JWT verification
 - Zod validation untuk semua API endpoints
 
-## Coming Soon
-
-- [ ] Manajemen Pesanan (view & update payment status)
-- [ ] Manajemen Admin accounts
-- [ ] Customer order history
-- [ ] Product search & filter
-- [ ] Integrasi Xendit production
-- [ ] Integrasi pengiriman (shipping API)
-- [ ] Product image upload
-
 ## Notes
 
 - Xendit masih dalam mode sandbox/simulasi
