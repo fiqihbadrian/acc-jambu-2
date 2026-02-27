@@ -128,6 +128,7 @@ npm run prisma:seed       # Seed database dengan data awal
 
 ## Notes
 
+
 - Xendit masih dalam mode sandbox/simulasi
 - Middleware menggunakan deprecated convention (akan migrate ke "proxy")
 - For production, ganti SQLite ke PostgreSQL/MySQL
