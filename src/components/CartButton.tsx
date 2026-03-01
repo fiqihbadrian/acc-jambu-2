@@ -10,6 +10,7 @@ type CartItem = {
   quantity: number;
 };
 
+
 type User = {
   id: number;
   email: string;
