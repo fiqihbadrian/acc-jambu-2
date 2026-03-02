@@ -12,6 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
 export const metadata: Metadata = {
   title: "Aneka Citra Computer - Printer & Aksesori",
   description: "Toko Printer dan Perlengkapan Komputer di Jambu 2, Bogor",
