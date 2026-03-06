@@ -25,6 +25,7 @@ type Product = {
 
 type CartItem = Product & { quantity: number };
 
+
 type User = {
   id: number;
   email: string;
