@@ -2,6 +2,7 @@ import Link from "next/link";
 
 type Product = {
   id: number;
+  
   name: string;
   priceCents: number;
   imageUrl: string;
