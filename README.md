@@ -27,6 +27,7 @@ Website e-commerce untuk toko printer **Aneka Citra Computer** di Jambu 2, Kota 
 - Manajemen database produk melalui UI
 - Protected routes dengan JWT middleware
 
+
 ## Tech Stack
 
 - **Framework:** Next.js 16.1.1 (App Router)
