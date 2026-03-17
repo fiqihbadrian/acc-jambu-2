@@ -14,6 +14,7 @@ import LogoLoop from "./LogoLoop";
 export default function FeaturesSection() {
   const features = [
     {
+
       icon: faPrint,
       title: "Produk Printer Lengkap",
       color: "text-blue-600",
