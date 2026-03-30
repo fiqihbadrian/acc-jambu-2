@@ -8,6 +8,7 @@ export default function ErrorPopup({ show, message, onClose }: ErrorPopupProps) 
   if (!show) return null;
 
   
+  
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 p-4">
