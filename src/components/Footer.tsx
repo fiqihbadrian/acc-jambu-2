@@ -12,6 +12,7 @@ export default function Footer() {
           <p className="text-sm text-emerald-700">
             © {year} • Bogor, Indonesia
           </p>
+          
         </div>
       </div>
     </footer>
