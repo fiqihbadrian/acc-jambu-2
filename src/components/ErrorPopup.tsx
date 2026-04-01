@@ -16,6 +16,7 @@ export default function ErrorPopup({ show, message, onClose }: ErrorPopupProps) 
         <div className="mb-4 flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-red-100">
             <svg
+              
               className="h-6 w-6 text-red-600"
               fill="none"
               viewBox="0 0 24 24"
