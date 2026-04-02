@@ -12,6 +12,7 @@ type Product = {
 };
 
 type ProductsSectionProps = {
+  
   products: Product[];
   loading: boolean;
   onProductClick: (product: Product) => void;
