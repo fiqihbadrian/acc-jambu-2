@@ -1,6 +1,7 @@
 // Simple Xendit sandbox simulator
 export type InvoiceStatus = 'PENDING' | 'PAID' | 'FAILED'
 
+
 export async function createInvoice({ orderId, amountCents }:{ orderId: number, amountCents: number }) {
   // Simulate creation
   const invoiceId = `inv_${orderId}_${Date.now()}`
