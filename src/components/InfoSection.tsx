@@ -1,5 +1,6 @@
 export default function InfoSection() {
   return (
+    
     <section id="info" className="mx-auto max-w-7xl px-6 pb-16 lg:px-8">
       <div className="rounded-2xl border border-white bg-white p-6 shadow-md">
         <h2 className="text-2xl font-bold text-emerald-800">Informasi Toko</h2>
