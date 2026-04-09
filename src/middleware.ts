@@ -4,6 +4,7 @@ import { jwtVerify } from 'jose'
 
 const SECRET = new TextEncoder().encode(process.env.JWT_SECRET || 'dev-secret-change-me')
 
+
 async function verify(req: NextRequest) {
   const token = req.cookies.get('token')?.value
   if (!token) return null
