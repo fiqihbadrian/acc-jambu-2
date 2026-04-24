@@ -6,6 +6,7 @@ import {
   faCreditCard,
   faTruck,
   faHeadset,
+  
   faAward,
   faCheckCircle,
 } from "@fortawesome/free-solid-svg-icons";
